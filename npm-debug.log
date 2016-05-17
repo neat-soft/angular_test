@@ -1,0 +1,36 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@2.14.9
+3 info using node@v0.12.10
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies loading dependencies from /home/dev/Git_Work/angular-test/package.json
+6 error install Couldn't read dependencies
+7 verbose stack Error: Failed to parse json
+7 verbose stack Trailing comma in object at 11:3
+7 verbose stack   },
+7 verbose stack   ^
+7 verbose stack     at parseError (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:379:11)
+7 verbose stack     at parseJson (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:68:23)
+7 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
+7 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:76:16
+7 verbose stack     at fs.js:334:14
+7 verbose stack     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:42:10
+7 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+8 verbose cwd /home/dev/Git_Work/angular-test
+9 error Linux 3.19.0-25-generic
+10 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+11 error node v0.12.10
+12 error npm  v2.14.9
+13 error file /home/dev/Git_Work/angular-test/package.json
+14 error code EJSONPARSE
+15 error Failed to parse json
+15 error Trailing comma in object at 11:3
+15 error   },
+15 error   ^
+16 error File: /home/dev/Git_Work/angular-test/package.json
+17 error Failed to parse package.json data.
+17 error package.json must be actual JSON, not just JavaScript.
+17 error
+17 error This is not a bug in npm.
+17 error Tell the package author to fix their package.json file. JSON.parse
+18 verbose exit [ 1, true ]

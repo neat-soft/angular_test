@@ -1,0 +1,41 @@
+{
+  "Data": [
+    {
+      "List of articles" : [
+        {
+        	"Article":{
+        			"Id": "id1",
+        			"Title": "Title1",
+        			"Image": "Image1",
+        			"Body": "Body1",
+        			"DatePublished": "date1",
+        			"CategoryId": "id1"
+        		}
+        },
+        {
+        	"Article":{
+        			"Id": "id2",
+        			"Title": "Title2",
+        			"Image": "Image2",
+        			"Body": "Body2",
+        			"DatePublished": "date2",
+        			"CategoryId": "id2"
+        		}
+        }
+      ],
+      "List of categories":[
+      	{
+      			"Category":{
+      				"Name":"Category1",
+      				"Id":"id1"
+      			}
+      	},
+      	{
+      			"Category":{
+      				"Name":"Category2",
+      				"Id":"id2"
+      			}
+      	}
+      ]
+    }
+]}

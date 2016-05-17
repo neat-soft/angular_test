@@ -1,0 +1,29 @@
+<nav ng-controller="NavbarCtrl" class="navbar navbar-inverse mainmenu">
+  <div class="container">
+	<div class="navbar-header">
+      <!--<a class="navbar-brand" ui-sref="main"><img src="/assets/images/logo.png" /></a>-->
+      <a href="/" ng-class="navbar-brand">
+        <span id ="company">AngularJS_Test </span>
+        <span id ="address">Project</span>
+      </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+      	<b>MENU</b>
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+  </div>
+  <div class="categories-menu navbar-collapse collapse">
+    <div class="container">
+      <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+            <li class="menu-item dropdown" ng-repeat="category in categories">
+              <a href="" class="" ng-class='{active: isActive($index)}' ng-click ="selectCategory($index)"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{category['Category'].Name}} </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</nav>

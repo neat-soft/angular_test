@@ -1,0 +1,64 @@
+<div ng_include='"components/navbar/navbar.html"'> </div>
+<div class="container ng-scope" style="margin-top :50px;">
+  <div class = "row avenir-db">
+    <div class="col-sm-8">
+      <div class="limit-overflow">
+        
+          <div class = "article_main v-center">
+            <h3 class="v-center-content">{{currentArticle.Title}}</h3>
+          </div>
+        
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="limit-overflow">
+        <table class ="table">
+          <tbody>
+            <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Image</th>
+            <th>Body</th>
+            <th>Date Published</th>
+            <th>CategoryID</th>
+            </tr>
+            <tr ng-repeat="article in articles">
+              
+              <td>{{article['Article'].Id}}</td>
+              <td>{{article['Article'].Title}}</td>
+              <td>{{article['Article'].Image}}</td>
+              <td>{{article['Article'].Body}}</td>
+              <td>{{article['Article'].DatePublished}}</td>
+              <td>{{article['Article'].CategoryId}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="limit-overflow" style="margin-top:1 5px;">
+        <table class ="table">
+          <tbody>
+            <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Image</th>
+            <th>Body</th>
+            <th>Date Published</th>
+            <th>CategoryID</th>
+            </tr>
+            <tr ng-repeat="article in articles" ng-if = "article['Article'].CategoryId == currentArticle.CategoryId">
+              
+              <td>{{article['Article'].Id}}</td>
+              <td>{{article['Article'].Title}}</td>
+              <td>{{article['Article'].Image}}</td>
+              <td>{{article['Article'].Body}}</td>
+              <td>{{article['Article'].DatePublished}}</td>
+              <td>{{article['Article'].CategoryId}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>
